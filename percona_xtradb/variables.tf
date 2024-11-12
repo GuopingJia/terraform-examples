@@ -1,8 +1,8 @@
-# (C) Copyright 2021 Hewlett Packard Enterprise Development LP
+# (C) Copyright 2021-2024 Hewlett Packard Enterprise Development LP
 variable "instance_name" {
   description = "The name for the instance"
   type        = string
-  default     = "perconadb"
+  default     = "greenboat perconadb"
 }
 
 variable "location" {
@@ -20,7 +20,7 @@ variable "space" {
 variable "cloud" {
   description = "cloud"
   type        = string
-  default     = "HPE GreenLake VMaaS Cloud-Trial3"
+  default     = "HPE GreenLake VMaaS Cloud-Trial2"
 }
 
 variable "datastore" {
@@ -32,7 +32,7 @@ variable "datastore" {
 variable "network" {
   description = "network"
   type        = string
-  default     = "App-Net"
+  default     = "Green-Net"
 }
 
 
@@ -51,21 +51,18 @@ variable "resource_pool" {
 variable "layout" {
   description = "layout"
   type        = string
-  #default     = "ubuntulayout"
   default = "Vmware VM"
 }
 
 variable "instance_type" {
   description = "instance_type"
   type        = string
-  #default     = "ubuntu20"
-  default = "vmware"
+  default = "VMware"
 }
 
 variable "service_plan" {
   description = "serviceplan"
   type        = string
-  #default     = "G1-Large"
   default = "G1-Medium"
 }
 
@@ -73,7 +70,7 @@ variable "service_plan" {
 variable "template" {
   description = "template"
   type        = string
-  default     = "vanilla-centos7-x86_64-09072020"
+  default     = "vanilla-centos-7-x86_64-18062020"
 }
 
 variable "sst_user" {
@@ -106,4 +103,3 @@ variable"folder" {
   type = string
   default = "ComputeFolder"
 }
-

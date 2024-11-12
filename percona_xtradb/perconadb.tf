@@ -1,12 +1,11 @@
 # (C) Copyright 2021 Hewlett Packard Enterprise Development LP
 
-#  Set-up for terraform >= v0.13
+#  Set-up for terraform
 terraform {
   required_providers {
     hpegl = {
-      source = "registry.terraform.io/hewlettpackard/hpegl"
-      #      version = ">= 0.0.1"
-      version = "0.1.0-beta7"
+      source = "HPE/hpegl"
+      version = "0.4.10"
     }
   }
 }

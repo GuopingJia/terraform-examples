@@ -1,4 +1,4 @@
-# (C) Copyright 2021 Hewlett Packard Enterprise Development LP
+# (C) Copyright 2021-2024 Hewlett Packard Enterprise Development LP
 output "boot_node_ip" {
   description = "boot node IP"
   value       = [hpegl_vmaas_instance.boot_node.containers[0].ip]
