@@ -1,5 +1,4 @@
-# (C) Copyright 2021 Hewlett Packard Enterprise Development LP
-
+# (C) Copyright 2021-2024 Hewlett Packard Enterprise Development LP
 #  Set-up for terraform
 terraform {
   required_providers {
@@ -55,7 +54,7 @@ data "hpegl_vmaas_template" "vanilla" {
   name = var.template
 }
 
-data"hpegl_vmaas_cloud_folder""compute_folder" {
+data"hpegl_vmaas_cloud_folder" "compute_folder" {
   cloud_id = data.hpegl_vmaas_cloud.cloud.id
   name = var.folder
 }

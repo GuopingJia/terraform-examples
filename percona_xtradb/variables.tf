@@ -2,7 +2,7 @@
 variable "instance_name" {
   description = "The name for the instance"
   type        = string
-  default     = "greenboat perconadb"
+  default     = "Greenboat PerconaDB"
 }
 
 variable "location" {
@@ -26,7 +26,7 @@ variable "cloud" {
 variable "datastore" {
   description = "datastore"
   type        = string
-  default     = "gl2-trial3-Vol0"
+  default     = "toro-gl1-trial2-Vol1"
 }
 
 variable "network" {
@@ -39,7 +39,7 @@ variable "network" {
 variable "group" {
   description = "group"
   type        = string
-  default     = "user-infraxx"
+  default     = "Department B Group"
 }
 
 variable "resource_pool" {
@@ -57,7 +57,7 @@ variable "layout" {
 variable "instance_type" {
   description = "instance_type"
   type        = string
-  default = "VMware"
+  default = "vmware"
 }
 
 variable "service_plan" {
