@@ -11,6 +11,7 @@
 
 ### terraform init
 
+```sh
 $ terraform init
 
 Initializing the backend...
@@ -41,9 +42,11 @@ should now work.
 If you ever set or change modules or backend configuration for Terraform,
 rerun this command to reinitialize your working directory. If you forget, other
 commands will detect it and remind you to do so if necessary.
+```
 
 ### terraform apply
 
+```sh
 $ terraform plan --var-file=variables_tenant.tfvars
 data.hpegl_vmaas_network.tf_network: Reading...
 data.hpegl_vmaas_layout.vmware: Reading...
@@ -152,9 +155,11 @@ Plan: 2 to add, 0 to change, 0 to destroy.
 ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 Note: You didn't use the -out option to save this plan, so Terraform can't guarantee to take exactly these actions if you run "terraform apply" now.
+```
 
 ### terraform apply
 
+```sh
 $ terraform apply --var-file=variables_tenant.tfvars
 data.hpegl_vmaas_environment.env: Reading...
 data.hpegl_vmaas_cloud.cloud: Reading...
@@ -284,9 +289,11 @@ hpegl_vmaas_instance.demo_vm[0]: Still creating... [2m0s elapsed]
 hpegl_vmaas_instance.demo_vm[0]: Creation complete after 2m9s [id=609]
 
 Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
+```
 
 ### terraform destroy
 
+```sh
 $ terraform destroy --var-file=variables_tenant.tfvars
 random_integer.random: Refreshing state... [id=47879]
 data.hpegl_vmaas_group.terraform_group: Reading...
@@ -529,3 +536,4 @@ random_integer.random: Destroying... [id=47879]
 random_integer.random: Destruction complete after 0s
 
 Destroy complete! Resources: 2 destroyed.
+```
