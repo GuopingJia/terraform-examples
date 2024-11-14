@@ -1,6 +1,12 @@
 # (C) Copyright 2021-2024 Hewlett Packard Enterprise Development LP
 # This playbook will install MariaDB
 
+- name: Replace CentOS-Base.repo
+  template:
+    src: centos-base.repo.j2
+    dest: /etc/yum.repos.d/CentOS-Base.repo
+    force: yes
+
 - name: yum-clean-all
   command: yum clean all
   args:
@@ -14,6 +20,12 @@
   yum:
     name: https://repo.percona.com/yum/percona-release-latest.noarch.rpm
     state: present
+
+- name: Enable original release
+  shell: percona-release enable-only original release
+
+- name: Enable tools release
+  shell: percona-release enable tools release
 
 - name: Install Percona-XtraDB cluster
   yum:

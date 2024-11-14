@@ -164,8 +164,11 @@ resource "null_resource" "DeployPersona" {
   provisioner "local-exec" {
     command = <<EOT
     # Remove host entry from known_hosts if exists
+    ssh-keyscan -H ${resource.hpegl_vmaas_instance.boot_node.containers[0].ip} >> ~/.ssh/known_hosts
     ssh-keygen -R ${resource.hpegl_vmaas_instance.boot_node.containers[0].ip}
+    ssh-keyscan -H ${resource.hpegl_vmaas_instance.node1.containers[0].ip} >> ~/.ssh/known_hosts
     ssh-keygen -R ${resource.hpegl_vmaas_instance.node1.containers[0].ip}
+    ssh-keyscan -H ${resource.hpegl_vmaas_instance.node2.containers[0].ip} >> ~/.ssh/known_hosts
     ssh-keygen -R ${resource.hpegl_vmaas_instance.node2.containers[0].ip}
     # Add sleep for the infrastructure to be ready before running the playbook
     sleep 120
