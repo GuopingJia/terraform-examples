@@ -93,7 +93,7 @@ Use the following procedure to verify replication by creating a new database on 
 
 ### terraform init
 
-    ```sh
+```sh
 $ terraform init
 Initializing the backend...
 Initializing provider plugins...
@@ -118,11 +118,11 @@ You may now begin working with Terraform. Try running "terraform plan" to see an
 
 If you ever set or change modules or backend configuration for Terraform,
 rerun this command to reinitialize your working directory. If you forget, other commands will detect it and remind you to do so if necessary.
-    ```
+```
 
 ### terraform plan
 
-    ```sh
+```sh
 $ terraform plan
 data.hpegl_vmaas_group.terraform_group: Reading...
 data.hpegl_vmaas_plan.g1_large: Reading...
@@ -333,11 +333,11 @@ Changes to Outputs:
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 Note: You didn't use the -out option to save this plan, so Terraform can't guarantee to take exactly these actions if you run "terraform apply" now.
-    ```
+```
 
 ### terraform apply
 
-    ```sh
+```sh
 $ terraform apply
 data.hpegl_vmaas_group.terraform_group: Reading...
 data.hpegl_vmaas_cloud.cloud: Reading...
@@ -851,11 +851,11 @@ node1_ip = [
 node2_ip = [
   "172.20.20.28",
 ]
-    ```
+```
 
 ### terraform show
 
-    ```sh
+```sh
 $ terraform show
 # data.hpegl_vmaas_cloud.cloud:
 data "hpegl_vmaas_cloud" "cloud" {
@@ -1430,11 +1430,11 @@ node1_ip = [
 node2_ip = [
     "172.20.20.28",
 ]
-    ```
+```
 
 ### terraform destroy
 
-    ```sh
+```sh
 $ terraform destroy
 random_integer.random: Refreshing state... [id=2283]
 data.hpegl_vmaas_network.network: Reading...
@@ -2035,4 +2035,4 @@ random_integer.random: Destroying... [id=2283]
 random_integer.random: Destruction complete after 0s
 
 Destroy complete! Resources: 5 destroyed.
-    ```
+```
