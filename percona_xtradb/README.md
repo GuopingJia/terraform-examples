@@ -1404,47 +1404,29 @@ node2_ip = [
 
 ```sh
 $ terraform destroy
-random_integer.random: Refreshing state... [id=2283]
-data.hpegl_vmaas_network.network: Reading...
-data.hpegl_vmaas_group.terraform_group: Reading...
+random_integer.random: Refreshing state... [id=32073]
 data.hpegl_vmaas_plan.g1_large: Reading...
 data.hpegl_vmaas_cloud.cloud: Reading...
+data.hpegl_vmaas_network.network: Reading...
+data.hpegl_vmaas_group.terraform_group: Reading...
 data.hpegl_vmaas_template.vanilla: Reading...
 data.hpegl_vmaas_layout.vmware: Reading...
-data.hpegl_vmaas_network.network: Still reading... [10s elapsed]
-data.hpegl_vmaas_group.terraform_group: Still reading... [10s elapsed]
-data.hpegl_vmaas_cloud.cloud: Still reading... [10s elapsed]
-data.hpegl_vmaas_plan.g1_large: Still reading... [10s elapsed]
-data.hpegl_vmaas_layout.vmware: Still reading... [10s elapsed]
-data.hpegl_vmaas_template.vanilla: Still reading... [10s elapsed]
-data.hpegl_vmaas_group.terraform_group: Still reading... [20s elapsed]
-data.hpegl_vmaas_network.network: Still reading... [20s elapsed]
-data.hpegl_vmaas_plan.g1_large: Still reading... [20s elapsed]
-data.hpegl_vmaas_cloud.cloud: Still reading... [20s elapsed]
-data.hpegl_vmaas_template.vanilla: Still reading... [20s elapsed]
-data.hpegl_vmaas_layout.vmware: Still reading... [20s elapsed]
-data.hpegl_vmaas_group.terraform_group: Still reading... [30s elapsed]
-data.hpegl_vmaas_network.network: Still reading... [30s elapsed]
-data.hpegl_vmaas_cloud.cloud: Still reading... [30s elapsed]
-data.hpegl_vmaas_plan.g1_large: Still reading... [30s elapsed]
-data.hpegl_vmaas_layout.vmware: Still reading... [30s elapsed]
-data.hpegl_vmaas_template.vanilla: Still reading... [30s elapsed]
-data.hpegl_vmaas_network.network: Read complete after 33s [id=14]
-data.hpegl_vmaas_template.vanilla: Read complete after 33s [id=961]
-data.hpegl_vmaas_group.terraform_group: Read complete after 33s [id=17]
-data.hpegl_vmaas_plan.g1_large: Read complete after 34s [id=408]
-data.hpegl_vmaas_cloud.cloud: Read complete after 34s [id=1]
+data.hpegl_vmaas_cloud.cloud: Read complete after 0s [id=1]
+data.hpegl_vmaas_cloud_folder.compute_folder: Reading...
 data.hpegl_vmaas_resource_pool.cl_resource_pool: Reading...
 data.hpegl_vmaas_datastore.c_3par: Reading...
-data.hpegl_vmaas_cloud_folder.compute_folder: Reading...
+data.hpegl_vmaas_layout.vmware: Read complete after 0s [id=113]
+data.hpegl_vmaas_template.vanilla: Read complete after 0s [id=961]
+data.hpegl_vmaas_network.network: Read complete after 0s [id=14]
 data.hpegl_vmaas_datastore.c_3par: Read complete after 0s [id=1]
-data.hpegl_vmaas_resource_pool.cl_resource_pool: Read complete after 0s [id=3]
-data.hpegl_vmaas_cloud_folder.compute_folder: Read complete after 0s [id=6]
-data.hpegl_vmaas_layout.vmware: Read complete after 34s [id=113]
-hpegl_vmaas_instance.boot_node: Refreshing state... [id=643]
-hpegl_vmaas_instance.node2: Refreshing state... [id=642]
-hpegl_vmaas_instance.node1: Refreshing state... [id=641]
-null_resource.DeployPersona: Refreshing state... [id=4220647135004058242]
+data.hpegl_vmaas_cloud_folder.compute_folder: Read complete after 1s [id=6]
+data.hpegl_vmaas_resource_pool.cl_resource_pool: Read complete after 1s [id=3]
+data.hpegl_vmaas_plan.g1_large: Read complete after 1s [id=408]
+data.hpegl_vmaas_group.terraform_group: Read complete after 1s [id=17]
+hpegl_vmaas_instance.boot_node: Refreshing state... [id=657]
+hpegl_vmaas_instance.node1: Refreshing state... [id=658]
+hpegl_vmaas_instance.node2: Refreshing state... [id=656]
+null_resource.DeployPersona: Refreshing state... [id=4827985361085728567]
 
 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
   - destroy
@@ -1461,14 +1443,12 @@ Terraform will perform the following actions:
                       - name = "VMware"
                     },
                 ]
-              - external_fqdn  = "Greenboat PerconaDB-2283.localdomain"
-              - hostname       = "Greenboat PerconaDB-2283"
-              - id             = 670
-              - ip             = "172.20.20.27"
+              - external_fqdn  = "Greenboat PerconaDB-32073.localdomain"
+              - hostname       = "Greenboat PerconaDB-32073"
+              - id             = 684
+              - ip             = "172.20.20.17"
               - max_cores      = 2
-              - max_memory     = 8589934592
-              - max_storage    = 53687091200
-              - name           = "Greenboat PerconaDB-boot-2283_670"
+              - name           = "Greenboat PerconaDB-boot-32073_684"
               - server         = [
                   - {
                       - compute_server_type = [
@@ -1478,9 +1458,9 @@ Terraform will perform the following actions:
                               - name            = "VMware Linux VM"
                             },
                         ]
-                      - date_created        = "2024-11-13T09:41:03Z"
-                      - id                  = 680
-                      - last_updated        = "2024-11-14T10:32:20Z"
+                      - date_created        = "2024-11-14T19:56:11Z"
+                      - id                  = 694
+                      - last_updated        = "2024-11-15T17:56:29Z"
                       - owner               = [
                           - {
                               - username = "ng-vmaas-api"
@@ -1493,7 +1473,7 @@ Terraform will perform the following actions:
                               - name = "centOS 7 64-bit"
                             },
                         ]
-                      - ssh_host            = "172.20.20.27"
+                      - ssh_host            = "172.20.20.17"
                       - ssh_port            = 22
                       - visibility          = "private"
                     },
@@ -1510,13 +1490,13 @@ Terraform will perform the following actions:
                       - username     = "ng-vmaas-api"
                     },
                 ]
-              - date_created = "2024-11-13T09:42:24Z"
-              - display_name = "Greenboat PerconaDB-boot-2283"
-              - duration     = 473
-              - end_date     = "2024-11-13T09:42:24Z"
-              - id           = 3786
-              - instance_id  = 643
-              - last_updated = "2024-11-13T09:42:24Z"
+              - date_created = "2024-11-14T19:57:24Z"
+              - display_name = "Greenboat PerconaDB-boot-32073"
+              - duration     = 238
+              - end_date     = "2024-11-14T19:57:24Z"
+              - id           = 3874
+              - instance_id  = 657
+              - last_updated = "2024-11-14T19:57:24Z"
               - percent      = 100
               - process_type = [
                   - {
@@ -1524,10 +1504,10 @@ Terraform will perform the following actions:
                       - name = "Post-Provision"
                     },
                 ]
-              - start_date   = "2024-11-13T09:42:24Z"
+              - start_date   = "2024-11-14T19:57:24Z"
               - status       = "complete"
               - status_eta   = 0
-              - unique_id    = "4d8b987c-b50a-44ef-b1bc-701ca35e54ce"
+              - unique_id    = "0dc51872-4da5-4608-ae21-7ecda24e0349"
               - updated_by   = [
                   - {
                       - display_name = "ng-vmaas-api"
@@ -1544,13 +1524,13 @@ Terraform will perform the following actions:
                       - username     = "ng-vmaas-api"
                     },
                 ]
-              - date_created = "2024-11-13T09:41:03Z"
-              - display_name = "Greenboat PerconaDB-boot-2283"
-              - duration     = 81235
-              - end_date     = "2024-11-13T09:42:24Z"
-              - id           = 3783
-              - instance_id  = 643
-              - last_updated = "2024-11-13T09:42:24Z"
+              - date_created = "2024-11-14T19:56:12Z"
+              - display_name = "Greenboat PerconaDB-boot-32073"
+              - duration     = 71707
+              - end_date     = "2024-11-14T19:57:24Z"
+              - id           = 3870
+              - instance_id  = 657
+              - last_updated = "2024-11-14T19:57:24Z"
               - percent      = 100
               - process_type = [
                   - {
@@ -1558,10 +1538,10 @@ Terraform will perform the following actions:
                       - name = "Provision"
                     },
                 ]
-              - start_date   = "2024-11-13T09:41:03Z"
+              - start_date   = "2024-11-14T19:56:12Z"
               - status       = "complete"
               - status_eta   = 0
-              - unique_id    = "929665cf-dd4c-4bfc-b116-ff720c13bd0c"
+              - unique_id    = "13e6c14d-cf5a-4e32-9803-b6c2a94d8bfa"
               - updated_by   = [
                   - {
                       - display_name = "ng-vmaas-api"
@@ -1571,16 +1551,16 @@ Terraform will perform the following actions:
                 # (1 unchanged attribute hidden)
             },
         ] -> null
-      - hostname           = "Greenboat PerconaDB-2283" -> null
-      - id                 = "643" -> null
+      - hostname           = "Greenboat PerconaDB-32073" -> null
+      - id                 = "657" -> null
       - instance_type_code = "vmware" -> null
       - labels             = [
           - "DBaaS",
         ] -> null
       - layout_id          = 113 -> null
-      - name               = "Greenboat PerconaDB-boot-2283" -> null
+      - name               = "Greenboat PerconaDB-boot-32073" -> null
       - plan_id            = 408 -> null
-      - server_id          = 680 -> null
+      - server_id          = 694 -> null
       - status             = "running" -> null
       - tags               = {
           - "Environment" = "Development"
@@ -1598,15 +1578,15 @@ Terraform will perform the following actions:
       - network {
           - id           = 14 -> null
           - interface_id = 0 -> null
-          - internal_id  = 848 -> null
+          - internal_id  = 862 -> null
           - is_primary   = true -> null
           - name         = "eth0" -> null
         }
 
       - volume {
-          - controller   = "2263:0:6:0" -> null
+          - controller   = "2305:0:6:0" -> null
           - datastore_id = "1" -> null
-          - id           = 949 -> null
+          - id           = 963 -> null
           - name         = "root_vol" -> null
           - root         = true -> null
           - size         = 50 -> null
@@ -1624,14 +1604,12 @@ Terraform will perform the following actions:
                       - name = "VMware"
                     },
                 ]
-              - external_fqdn  = "Greenboat PerconaDB-2283.localdomain"
-              - hostname       = "Greenboat PerconaDB-2283"
-              - id             = 668
-              - ip             = "172.20.20.21"
+              - external_fqdn  = "greenboatperconadb-32073.localdomain"
+              - hostname       = "greenboatperconadb-32073"
+              - id             = 685
+              - ip             = "172.20.20.18"
               - max_cores      = 2
-              - max_memory     = 8589934592
-              - max_storage    = 53687091200
-              - name           = "Greenboat PerconaDB-node1-2283_668"
+              - name           = "Greenboat PerconaDB-node1-32073_685"
               - server         = [
                   - {
                       - compute_server_type = [
@@ -1641,9 +1619,9 @@ Terraform will perform the following actions:
                               - name            = "VMware Linux VM"
                             },
                         ]
-                      - date_created        = "2024-11-13T09:41:03Z"
-                      - id                  = 678
-                      - last_updated        = "2024-11-14T10:32:19Z"
+                      - date_created        = "2024-11-14T19:56:11Z"
+                      - id                  = 695
+                      - last_updated        = "2024-11-15T17:56:27Z"
                       - owner               = [
                           - {
                               - username = "ng-vmaas-api"
@@ -1656,7 +1634,7 @@ Terraform will perform the following actions:
                               - name = "centOS 7 64-bit"
                             },
                         ]
-                      - ssh_host            = "172.20.20.21"
+                      - ssh_host            = "172.20.20.18"
                       - ssh_port            = 22
                       - visibility          = "private"
                     },
@@ -1673,13 +1651,13 @@ Terraform will perform the following actions:
                       - username     = "ng-vmaas-api"
                     },
                 ]
-              - date_created = "2024-11-13T09:42:19Z"
-              - display_name = "Greenboat PerconaDB-node1-2283"
-              - duration     = 250
-              - end_date     = "2024-11-13T09:42:19Z"
-              - id           = 3784
-              - instance_id  = 641
-              - last_updated = "2024-11-13T09:42:19Z"
+              - date_created = "2024-11-14T19:57:22Z"
+              - display_name = "Greenboat PerconaDB-node1-32073"
+              - duration     = 466
+              - end_date     = "2024-11-14T19:57:22Z"
+              - id           = 3872
+              - instance_id  = 658
+              - last_updated = "2024-11-14T19:57:22Z"
               - percent      = 100
               - process_type = [
                   - {
@@ -1687,10 +1665,10 @@ Terraform will perform the following actions:
                       - name = "Post-Provision"
                     },
                 ]
-              - start_date   = "2024-11-13T09:42:19Z"
+              - start_date   = "2024-11-14T19:57:22Z"
               - status       = "complete"
               - status_eta   = 0
-              - unique_id    = "7c4a3a6e-245f-40c3-bbcc-2999568cc798"
+              - unique_id    = "9b5a7048-ea43-47f4-ab73-b5a75376ecbb"
               - updated_by   = [
                   - {
                       - display_name = "ng-vmaas-api"
@@ -1707,13 +1685,13 @@ Terraform will perform the following actions:
                       - username     = "ng-vmaas-api"
                     },
                 ]
-              - date_created = "2024-11-13T09:41:03Z"
-              - display_name = "Greenboat PerconaDB-node1-2283"
-              - duration     = 75579
-              - end_date     = "2024-11-13T09:42:19Z"
-              - id           = 3781
-              - instance_id  = 641
-              - last_updated = "2024-11-13T09:42:19Z"
+              - date_created = "2024-11-14T19:56:12Z"
+              - display_name = "Greenboat PerconaDB-node1-32073"
+              - duration     = 69987
+              - end_date     = "2024-11-14T19:57:22Z"
+              - id           = 3871
+              - instance_id  = 658
+              - last_updated = "2024-11-14T19:57:22Z"
               - percent      = 100
               - process_type = [
                   - {
@@ -1721,10 +1699,10 @@ Terraform will perform the following actions:
                       - name = "Provision"
                     },
                 ]
-              - start_date   = "2024-11-13T09:41:03Z"
+              - start_date   = "2024-11-14T19:56:12Z"
               - status       = "complete"
               - status_eta   = 0
-              - unique_id    = "b8d49323-1df0-4ea1-97a7-fb1784ea58ed"
+              - unique_id    = "38cbe2da-4a3a-4ab8-bf1c-3f66a9859206"
               - updated_by   = [
                   - {
                       - display_name = "ng-vmaas-api"
@@ -1734,16 +1712,16 @@ Terraform will perform the following actions:
                 # (1 unchanged attribute hidden)
             },
         ] -> null
-      - hostname           = "Greenboat PerconaDB-2283" -> null
-      - id                 = "641" -> null
+      - hostname           = "Greenboat PerconaDB-32073" -> null
+      - id                 = "658" -> null
       - instance_type_code = "vmware" -> null
       - labels             = [
           - "DBaaS",
         ] -> null
       - layout_id          = 113 -> null
-      - name               = "Greenboat PerconaDB-node1-2283" -> null
+      - name               = "Greenboat PerconaDB-node1-32073" -> null
       - plan_id            = 408 -> null
-      - server_id          = 678 -> null
+      - server_id          = 695 -> null
       - status             = "running" -> null
       - tags               = {
           - "Environment" = "Development"
@@ -1761,15 +1739,15 @@ Terraform will perform the following actions:
       - network {
           - id           = 14 -> null
           - interface_id = 0 -> null
-          - internal_id  = 846 -> null
+          - internal_id  = 863 -> null
           - is_primary   = true -> null
           - name         = "eth0" -> null
         }
 
       - volume {
-          - controller   = "2259:0:6:0" -> null
+          - controller   = "2308:0:6:0" -> null
           - datastore_id = "1" -> null
-          - id           = 947 -> null
+          - id           = 964 -> null
           - name         = "root_vol" -> null
           - root         = true -> null
           - size         = 50 -> null
@@ -1787,14 +1765,12 @@ Terraform will perform the following actions:
                       - name = "VMware"
                     },
                 ]
-              - external_fqdn  = "Greenboat PerconaDB-2283.localdomain"
-              - hostname       = "Greenboat PerconaDB-2283"
-              - id             = 669
-              - ip             = "172.20.20.28"
+              - external_fqdn  = "Greenboat PerconaDB-32073.localdomain"
+              - hostname       = "Greenboat PerconaDB-32073"
+              - id             = 683
+              - ip             = "172.20.20.16"
               - max_cores      = 2
-              - max_memory     = 8589934592
-              - max_storage    = 53687091200
-              - name           = "Greenboat PerconaDB-node2-2283_669"
+              - name           = "Greenboat PerconaDB-node2-32073_683"
               - server         = [
                   - {
                       - compute_server_type = [
@@ -1804,9 +1780,9 @@ Terraform will perform the following actions:
                               - name            = "VMware Linux VM"
                             },
                         ]
-                      - date_created        = "2024-11-13T09:41:03Z"
-                      - id                  = 679
-                      - last_updated        = "2024-11-14T10:32:20Z"
+                      - date_created        = "2024-11-14T19:56:11Z"
+                      - id                  = 693
+                      - last_updated        = "2024-11-15T17:56:33Z"
                       - owner               = [
                           - {
                               - username = "ng-vmaas-api"
@@ -1819,7 +1795,7 @@ Terraform will perform the following actions:
                               - name = "centOS 7 64-bit"
                             },
                         ]
-                      - ssh_host            = "172.20.20.28"
+                      - ssh_host            = "172.20.20.16"
                       - ssh_port            = 22
                       - visibility          = "private"
                     },
@@ -1836,13 +1812,13 @@ Terraform will perform the following actions:
                       - username     = "ng-vmaas-api"
                     },
                 ]
-              - date_created = "2024-11-13T09:42:24Z"
-              - display_name = "Greenboat PerconaDB-node2-2283"
-              - duration     = 570
-              - end_date     = "2024-11-13T09:42:25Z"
-              - id           = 3785
-              - instance_id  = 642
-              - last_updated = "2024-11-13T09:42:25Z"
+              - date_created = "2024-11-14T19:57:23Z"
+              - display_name = "Greenboat PerconaDB-node2-32073"
+              - duration     = 946
+              - end_date     = "2024-11-14T19:57:24Z"
+              - id           = 3873
+              - instance_id  = 656
+              - last_updated = "2024-11-14T19:57:24Z"
               - percent      = 100
               - process_type = [
                   - {
@@ -1850,10 +1826,10 @@ Terraform will perform the following actions:
                       - name = "Post-Provision"
                     },
                 ]
-              - start_date   = "2024-11-13T09:42:24Z"
+              - start_date   = "2024-11-14T19:57:23Z"
               - status       = "complete"
               - status_eta   = 0
-              - unique_id    = "b473057a-1acc-4643-ac1f-ecfd58ff5f91"
+              - unique_id    = "bcd9558e-e22b-498e-b8b9-9aebc99b0ac1"
               - updated_by   = [
                   - {
                       - display_name = "ng-vmaas-api"
@@ -1870,13 +1846,13 @@ Terraform will perform the following actions:
                       - username     = "ng-vmaas-api"
                     },
                 ]
-              - date_created = "2024-11-13T09:41:03Z"
-              - display_name = "Greenboat PerconaDB-node2-2283"
-              - duration     = 80993
-              - end_date     = "2024-11-13T09:42:24Z"
-              - id           = 3782
-              - instance_id  = 642
-              - last_updated = "2024-11-13T09:42:24Z"
+              - date_created = "2024-11-14T19:56:12Z"
+              - display_name = "Greenboat PerconaDB-node2-32073"
+              - duration     = 71074
+              - end_date     = "2024-11-14T19:57:23Z"
+              - id           = 3869
+              - instance_id  = 656
+              - last_updated = "2024-11-14T19:57:23Z"
               - percent      = 100
               - process_type = [
                   - {
@@ -1884,10 +1860,10 @@ Terraform will perform the following actions:
                       - name = "Provision"
                     },
                 ]
-              - start_date   = "2024-11-13T09:41:03Z"
+              - start_date   = "2024-11-14T19:56:12Z"
               - status       = "complete"
               - status_eta   = 0
-              - unique_id    = "4f1d0824-c4e1-436a-b292-961b47ecb6d3"
+              - unique_id    = "d0d94442-e271-49ef-9161-a525e463f257"
               - updated_by   = [
                   - {
                       - display_name = "ng-vmaas-api"
@@ -1897,16 +1873,16 @@ Terraform will perform the following actions:
                 # (1 unchanged attribute hidden)
             },
         ] -> null
-      - hostname           = "Greenboat PerconaDB-2283" -> null
-      - id                 = "642" -> null
+      - hostname           = "Greenboat PerconaDB-32073" -> null
+      - id                 = "656" -> null
       - instance_type_code = "vmware" -> null
       - labels             = [
           - "DBaaS",
         ] -> null
       - layout_id          = 113 -> null
-      - name               = "Greenboat PerconaDB-node2-2283" -> null
+      - name               = "Greenboat PerconaDB-node2-32073" -> null
       - plan_id            = 408 -> null
-      - server_id          = 679 -> null
+      - server_id          = 693 -> null
       - status             = "running" -> null
       - tags               = {
           - "Environment" = "Development"
@@ -1924,15 +1900,15 @@ Terraform will perform the following actions:
       - network {
           - id           = 14 -> null
           - interface_id = 0 -> null
-          - internal_id  = 847 -> null
+          - internal_id  = 861 -> null
           - is_primary   = true -> null
           - name         = "eth0" -> null
         }
 
       - volume {
-          - controller   = "2261:0:6:0" -> null
+          - controller   = "2302:0:6:0" -> null
           - datastore_id = "1" -> null
-          - id           = 948 -> null
+          - id           = 962 -> null
           - name         = "root_vol" -> null
           - root         = true -> null
           - size         = 50 -> null
@@ -1942,28 +1918,28 @@ Terraform will perform the following actions:
 
   # null_resource.DeployPersona will be destroyed
   - resource "null_resource" "DeployPersona" {
-      - id = "4220647135004058242" -> null
+      - id = "4827985361085728567" -> null
     }
 
   # random_integer.random will be destroyed
   - resource "random_integer" "random" {
-      - id     = "2283" -> null
+      - id     = "32073" -> null
       - max    = 50000 -> null
       - min    = 1 -> null
-      - result = 2283 -> null
+      - result = 32073 -> null
     }
 
 Plan: 0 to add, 0 to change, 5 to destroy.
 
 Changes to Outputs:
   - boot_node_ip = [
-      - "172.20.20.27",
+      - "172.20.20.17",
     ] -> null
   - node1_ip     = [
-      - "172.20.20.21",
+      - "172.20.20.18",
     ] -> null
   - node2_ip     = [
-      - "172.20.20.28",
+      - "172.20.20.16",
     ] -> null
 
 Do you really want to destroy all resources?
@@ -1972,34 +1948,25 @@ Do you really want to destroy all resources?
 
   Enter a value: yes
 
-null_resource.DeployPersona: Destroying... [id=4220647135004058242]
+null_resource.DeployPersona: Destroying... [id=4827985361085728567]
 null_resource.DeployPersona: Destruction complete after 0s
-hpegl_vmaas_instance.node2: Destroying... [id=642]
-hpegl_vmaas_instance.boot_node: Destroying... [id=643]
-hpegl_vmaas_instance.node1: Destroying... [id=641]
-hpegl_vmaas_instance.boot_node: Still destroying... [id=643, 10s elapsed]
-hpegl_vmaas_instance.node2: Still destroying... [id=642, 10s elapsed]
-hpegl_vmaas_instance.node1: Still destroying... [id=641, 10s elapsed]
-hpegl_vmaas_instance.node2: Still destroying... [id=642, 20s elapsed]
-hpegl_vmaas_instance.boot_node: Still destroying... [id=643, 20s elapsed]
-hpegl_vmaas_instance.node1: Still destroying... [id=641, 20s elapsed]
-hpegl_vmaas_instance.node2: Still destroying... [id=642, 30s elapsed]
-hpegl_vmaas_instance.boot_node: Still destroying... [id=643, 30s elapsed]
-hpegl_vmaas_instance.node1: Still destroying... [id=641, 30s elapsed]
-hpegl_vmaas_instance.boot_node: Still destroying... [id=643, 40s elapsed]
-hpegl_vmaas_instance.node2: Still destroying... [id=642, 40s elapsed]
-hpegl_vmaas_instance.node1: Still destroying... [id=641, 40s elapsed]
-hpegl_vmaas_instance.node2: Still destroying... [id=642, 50s elapsed]
-hpegl_vmaas_instance.boot_node: Still destroying... [id=643, 50s elapsed]
-hpegl_vmaas_instance.node1: Still destroying... [id=641, 50s elapsed]
-hpegl_vmaas_instance.boot_node: Still destroying... [id=643, 1m0s elapsed]
-hpegl_vmaas_instance.node2: Still destroying... [id=642, 1m0s elapsed]
-hpegl_vmaas_instance.node1: Still destroying... [id=641, 1m0s elapsed]
-hpegl_vmaas_instance.boot_node: Destruction complete after 1m3s
-hpegl_vmaas_instance.node1: Destruction complete after 1m4s
-hpegl_vmaas_instance.node2: Still destroying... [id=642, 1m10s elapsed]
-hpegl_vmaas_instance.node2: Destruction complete after 1m18s
-random_integer.random: Destroying... [id=2283]
+hpegl_vmaas_instance.node2: Destroying... [id=656]
+hpegl_vmaas_instance.node1: Destroying... [id=658]
+hpegl_vmaas_instance.boot_node: Destroying... [id=657]
+hpegl_vmaas_instance.node2: Still destroying... [id=656, 10s elapsed]
+hpegl_vmaas_instance.boot_node: Still destroying... [id=657, 10s elapsed]
+hpegl_vmaas_instance.node1: Still destroying... [id=658, 10s elapsed]
+hpegl_vmaas_instance.node2: Still destroying... [id=656, 20s elapsed]
+hpegl_vmaas_instance.boot_node: Still destroying... [id=657, 20s elapsed]
+hpegl_vmaas_instance.node1: Still destroying... [id=658, 20s elapsed]
+hpegl_vmaas_instance.node2: Still destroying... [id=656, 30s elapsed]
+hpegl_vmaas_instance.boot_node: Still destroying... [id=657, 30s elapsed]
+hpegl_vmaas_instance.node1: Still destroying... [id=658, 30s elapsed]
+hpegl_vmaas_instance.node2: Destruction complete after 31s
+hpegl_vmaas_instance.node1: Destruction complete after 31s
+hpegl_vmaas_instance.boot_node: Still destroying... [id=657, 40s elapsed]
+hpegl_vmaas_instance.boot_node: Destruction complete after 47s
+random_integer.random: Destroying... [id=32073]
 random_integer.random: Destruction complete after 0s
 
 Destroy complete! Resources: 5 destroyed.
